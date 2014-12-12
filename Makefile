@@ -1,9 +1,11 @@
 # This includes all helper make files #
 # ----------------------------------- #
 
-include git/*
-include composer/*
-include symfony/*
+LOCATION=./
+
+include $(LOCATION)git/*
+include $(LOCATION)composer/*
+include $(LOCATION)symfony/*
 
 # ---
 # Below is example overwriting commands
@@ -13,5 +15,5 @@ include symfony/*
 #symfony.test.spec:
 #	bin/phpspec run  --config test/phpspec.yml
 
-symfony.test.bdd:
+#symfony.test.bdd:
 #	bin/behat --config test/behat.yml --suite=${suite}
