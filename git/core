@@ -1,0 +1,5 @@
+# Git core #
+# -------- #
+
+git.status:
+	git status -s
