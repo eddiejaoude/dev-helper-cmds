@@ -4,10 +4,20 @@ Useful commands for every Developer
 
 ## Usage
 
+Below our the built-in commands. 
+ 
+You can override these by adding to the main Makefile that contains all the includes.
+
+It is also possible to combine exist or new commands with a new command:
+
+```
+new.command: old.cmd1 old.cmd2
+    echo NEW CMD
+```
+
 ### Git commands
 
 * `make git.status`
-
 
 ### Composer commands
 
