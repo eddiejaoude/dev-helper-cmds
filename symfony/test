@@ -1,0 +1,14 @@
+# Symfony Test #
+# ------------ #
+
+symfony.test.run:
+	bin/robo parallel:run
+
+symfony.test.bdd:
+	bin/behat --suite=${suite}
+
+symfony.test.spec:
+	bin/phpspec run
+
+symfony.test.unit:
+	bin/phpunit --configuration app

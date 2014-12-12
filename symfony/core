@@ -1,0 +1,5 @@
+# Symfony #
+# ------- #
+
+symfony.server:
+	php app/console server:run -vvv
