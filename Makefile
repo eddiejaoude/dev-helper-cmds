@@ -1,11 +1,9 @@
 # This includes all helper make files #
 # ----------------------------------- #
 
-LOCATION=./
+LOCATION=.
 
-include $(LOCATION)git/*
-include $(LOCATION)composer/*
-include $(LOCATION)symfony/*
+include $(LOCATION)/include.all
 
 # ---
 # Below is example overwriting commands

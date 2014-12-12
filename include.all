@@ -1,0 +1,3 @@
+include $(LOCATION)/git/*
+include $(LOCATION)/composer/*
+include $(LOCATION)/symfony/*
