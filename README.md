@@ -6,4 +6,13 @@ Useful commands for every Developer
 
 ### Git commands
 
-make git.status
+* `make git.status`
+
+
+### Composer commands
+
+* `make composer.download`
+* `make composer.install`
+    * dependency on `composer.download`
+* `make composer.update`
+    * dependency on `composer.download`

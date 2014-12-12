@@ -2,3 +2,4 @@
 # ----------------------------------- #
 
 include git/*
+include composer/*
