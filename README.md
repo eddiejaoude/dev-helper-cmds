@@ -1,6 +1,14 @@
 # Dev Helper Commands
 
-Useful commands for every Developer
+Useful commands for every Developer.
+
+This abstracts the commands required for development.
+
+For example:
+
+If a developer/tester needs to start the webserver, then should **NOT* * care if you are using vagrant or php built-in webserver.
+They should just run the same command (eg. make dev.server). This way, when updating the architecture, the same commands 
+ can be run, even if they are doing something slightly different or more than in an earlier version.
 
 ## Usage
 
