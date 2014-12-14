@@ -1,0 +1,3 @@
+scrutinizer.coverage:
+	wget https://scrutinizer-ci.com/ocular.phar
+	php ocular.phar code-coverage:upload --format=php-clover test/build/coverage.xml
