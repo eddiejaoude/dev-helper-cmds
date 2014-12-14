@@ -14,8 +14,12 @@ build.user:
 	git config --global user.email "builds@travis-ci.com"
 	git config --global user.name "Travis CI"
 
-build.version:
-	replace '{{ version_self }}' $(GIT_TAG) -- $(VERSIONFILE)
+build.version: build.version.update build.version.commit
+
+build.version.update:
+	echo $(GIT_TAG) > $(VERSIONFILE)
+
+build.version.commit:
 	git commit -m "Set build VERSION number $(GIT_TAG)" $(VERSIONFILE)
 
 build.changelog:
