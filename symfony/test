@@ -8,7 +8,7 @@ symfony.test.bdd:
 	bin/behat --suite=${suite}
 
 symfony.test.spec:
-	bin/phpspec run
+	bin/phpspec run -vvv --format=pretty
 
 symfony.test.unit:
 	bin/phpunit --configuration app
