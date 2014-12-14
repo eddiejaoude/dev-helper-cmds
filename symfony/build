@@ -1,0 +1,5 @@
+build.assets:
+	php app/console assetic:dump
+	git add web/css/*
+	git add web/js/*
+	git commit -m "Web assets added" web/
