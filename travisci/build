@@ -1,6 +1,13 @@
 GIT_TAG=build-$(TRAVIS_BRANCH)-$(TRAVIS_BUILD_NUMBER)
 
-# define `build.assets`
+# required for pushing tags to Github
+# ----------------------------------------
+# $(GITHUBKEY) make sure this is encrypted
+# $(GITHUBPROJECT)
+# $(VERSIONFILE)
+# ----------------------------------------
+
+# define `build.assets`, defaults for symfony
 build.package: build.user build.version build.changelog build.assets build.tag
 
 build.user:
@@ -9,7 +16,7 @@ build.user:
 
 build.version:
 	replace '{{ version_self }}' $(GIT_TAG) -- version.ini
-	git commit -m "Set build VERSION number $(GIT_TAG)" version.ini
+	git commit -m "Set build VERSION number $(GIT_TAG)" $(VERSIONFILE)
 
 build.changelog:
 	git log --all --format='%h%x09%an%x09%ad%x09%s' > changelog
