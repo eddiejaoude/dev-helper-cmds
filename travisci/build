@@ -15,7 +15,7 @@ build.user:
 	git config --global user.name "Travis CI"
 
 build.version:
-	replace '{{ version_self }}' $(GIT_TAG) -- version.ini
+	replace '{{ version_self }}' $(GIT_TAG) -- $(VERSIONFILE)
 	git commit -m "Set build VERSION number $(GIT_TAG)" $(VERSIONFILE)
 
 build.changelog:
