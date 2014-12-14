@@ -1,0 +1,20 @@
+GIT_TAG=build-$(TRAVIS_BRANCH)-$(TRAVIS_BUILD_NUMBER)
+
+# define `build.assets`
+build.package: build.user build.version build.changelog build.assets build.tag
+
+build.user:
+	git config --global user.email "builds@travis-ci.com"
+	git config --global user.name "Travis CI"
+
+build.version:
+	replace '{{ version_self }}' $(GIT_TAG) -- version.ini
+	git commit -m "Set build VERSION number $(GIT_TAG)" version.ini
+
+build.changelog:
+	git log --all --format='%h%x09%an%x09%ad%x09%s' > changelog
+	git commit -m "Created changelog" changelog
+
+build.tag:
+	git tag $(GIT_TAG) -a -m "Generated tag from TravisCI build $(TRAVIS_BUILD_NUMBER)"
+	@git push --quiet https://$(GITHUBKEY)@github.com/$(GITHUBPROJECT) $(GIT_TAG) > /dev/null 2>&1
