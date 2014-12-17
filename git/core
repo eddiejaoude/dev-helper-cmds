@@ -3,3 +3,7 @@
 
 git.status:
 	git status -s
+
+git.branch:
+	git fetch --tags
+	git checkout ${branch}
