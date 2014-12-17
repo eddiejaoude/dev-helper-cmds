@@ -66,6 +66,21 @@ new.command: old.cmd1 old.cmd2
     echo NEW CMD
 ```
 
+### Added Custom commands
+
+1. Create a directory in your project root `.make/`
+
+2. Add command files inside new directory `.make/log`
+
+3. In your Makefile include new custom files with
+ 
+```
+include .make/*
+```
+
+All done!
+
+
 ---
 
 ### Built-in commands
