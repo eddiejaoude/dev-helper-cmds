@@ -1,0 +1,2 @@
+symfony.logs:
+	cat app/logs/*.log
