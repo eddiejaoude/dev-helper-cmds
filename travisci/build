@@ -7,7 +7,6 @@ GIT_TAG=build-$(TRAVIS_BRANCH)-$(TRAVIS_BUILD_NUMBER)
 # $(VERSIONFILE)
 # ----------------------------------------
 
-# define `build.assets`, defaults for symfony
 build.package: build.user build.version build.changelog build.tag
 
 build.user:
