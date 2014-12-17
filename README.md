@@ -88,6 +88,7 @@ All done!
 #### Git commands
 
 * `make git.status`
+* `make git.branch branch=build-feature/symfony2-behat-35` (this can be a branch or tag or commit hash)
 
 #### Composer commands
 
@@ -98,6 +99,22 @@ All done!
     * dependency on `composer.download`
 
 #### Symfony
+
+##### Built-in Server
+
+* `make symfony.server`
+
+##### Dump logs
+
+* `make symfony.logs`
+
+##### Dump & commit assets
+
+* `make build.assets`
+
+Example usage / override, add the following to your custom Makefile (or include) 
+
+```build.package: build.user build.version build.changelog build.assets build.tag```
 
 ##### Running tests in parallel using Robo
 
