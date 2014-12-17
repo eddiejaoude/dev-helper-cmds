@@ -1,5 +1,7 @@
 # Dev Helper Commands
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/eddiejaoude/dev-helper-cmds?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Useful commands for every Developer.
 
 This abstracts the commands required for development.
