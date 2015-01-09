@@ -144,5 +144,5 @@ Example usage / override, add the following to your custom Makefile (or include)
     
 ##### Running PHPUnit
 
-* `symfony.test.unit`
+* `symfony.test.unit suite=app`
 

@@ -11,4 +11,4 @@ symfony.test.spec:
 	bin/phpspec run -vvv --format=pretty
 
 symfony.test.unit:
-	bin/phpunit --configuration app
+	bin/phpunit --configuration ${suite}
