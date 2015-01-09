@@ -110,6 +110,15 @@ All done!
 
 * `make symfony.logs`
 
+##### Database
+
+* `make symfony.dev.rebuild` runs all the commands below...
+
+* `make symfony.dev.db.drop` drops the database
+* `make symfony.dev.db.create` creates the database
+* `make symfony.dev.db.update` updates the database
+* `make symfony.dev.db.data` loads fixture data into database
+
 ##### Dump & commit assets
 
 * `make build.assets`
