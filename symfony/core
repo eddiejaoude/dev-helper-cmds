@@ -3,3 +3,6 @@
 
 symfony.server:
 	php app/console server:run -vvv
+
+symfony.clear:
+	php app/console cache:clear
