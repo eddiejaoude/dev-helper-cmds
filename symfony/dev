@@ -4,7 +4,7 @@
 symfony.dev.rebuild: symfony.dev.db.drop symfony.dev.db.create symfony.dev.db.update symfony.dev.db.data
 
 symfony.dev.db.drop:
-	php app/console doctrine:database:drop --force
+	-php app/console doctrine:database:drop --force
 
 symfony.dev.db.create:
 	php app/console doctrine:database:create
