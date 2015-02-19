@@ -146,3 +146,7 @@ Example usage / override, add the following to your custom Makefile (or include)
 
 * `symfony.test.unit suite=app`
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/eddiejaoude/dev-helper-cmds/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
